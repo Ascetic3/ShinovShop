@@ -1,0 +1,12 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+@import "header1.scss";
+
+@import "main.scss";
+
+body { 
+    background: rgba(34, 34, 34, 0.103);
+    max-width: 1120px;
+    margin: 0px auto;
+}

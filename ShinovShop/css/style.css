@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css?family=Arimo");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+.header-wrap {
+  -webkit-box-shadow: -1px 1px 11px rgb(175, 174, 174);
+          box-shadow: -1px 1px 11px rgb(175, 174, 174);
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.header-wrap .top-menu {
+  background: white;
+  max-width: 1120px;
+  margin: 0px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr 2.2fr 0.5fr;
+  grid-template-columns: 1fr 1.5fr 2.2fr 0.5fr;
+      grid-template-areas: "first empty second third";
+}
+.header-wrap .top-menu .home-page-header__grid-item-logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  padding: 10px 0 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: first;
+}
+.header-wrap .top-menu .home-page-header__grid-item-logo img {
+  height: 40px;
+  width: auto;
+}
+.header-wrap .top-menu .menu-main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: second;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.header-wrap .top-menu .menu-main a {
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0 10px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  word-spacing: -3px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.header-wrap .top-menu .menu-main a:hover {
+  background: rgba(34, 136, 56, 0.3);
+}
+.header-wrap .top-menu .home-page-header__grid-item-search-shop-block {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px;
+  grid-area: third;
+}
+.header-wrap .top-menu .home-page-header__grid-item-search-shop-block .home-page-header__grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 150%;
+}
+.header-wrap .top-menu .home-page-header__grid-item-search-shop-block .home-page-header__grid-item i {
+  padding: 5px;
+  color: black;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.header-wrap .top-menu .home-page-header__grid-item-search-shop-block .home-page-header__grid-item i:hover {
+  color: rgba(0, 0, 0, 0.671);
+  cursor: pointer;
+}
+
+main {
+  background: white;
+  max-width: 1120px;
+  margin: 0px auto;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+main .main-foto {
+  width: 100%;
+  height: 700px;
+  background: url(../img/webp/main.webp) top right no-repeat;
+  background-color: rgba(162, 219, 155, 0.514);
+  position: relative;
+}
+main .main-foto .title-wrap {
+  position: relative;
+  top: 200px;
+  left: 50px;
+  width: 40%;
+}
+main .main-foto .title-wrap h1 {
+  padding-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 40px;
+  text-wrap: nowrap;
+}
+main .main-foto .title-wrap p {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+main .main-foto::after {
+  content: "";
+  display: block;
+  border-top: 100px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 100px solid transparent;
+  border-right: 190px solid rgb(113, 201, 42);
+  position: absolute;
+  top: 84.5%;
+  left: 72.6665%;
+}
+main .back {
+  height: 600px;
+  background-color: white;
+}
+
+body {
+  background: rgba(34, 34, 34, 0.103);
+  max-width: 1120px;
+  margin: 0px auto;
+}
